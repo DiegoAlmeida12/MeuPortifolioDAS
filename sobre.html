@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Diêgo Almeida Silva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="imagens/Diego-Portifolio.png" alt="Minha foto de perfil" style="float: left; margin-left: 10px;" width="350">
+    <h1>Diêgo Almeida Silva</h1>
+    <p>Analista de Dados Jr | Administrador de Banco de Dados (DBA) | Front-end</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="experiencia.html">Experiência</a>
+    <a href="formacao.html">Formação</a>
+    <a href="certificacoes.html">Certificações</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonado por dados e tecnologia, com experiência em vendas e segurança. Meu objetivo é transformar dados em decisões estratégicas e eficientes.</p>
+    <p>Localização: Luziânia - GO</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diêgo Almeida Silva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Rolagem suave para as seções
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

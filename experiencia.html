@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiência - Diêgo Almeida Silva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="imagens/Diego-Portifolio.png" alt="Minha foto de perfil" style="float: left; margin-left: 10px;" width="350">
+    <h1>Diêgo Almeida Silva</h1>
+    <p>Analista de Dados Jr | Administrador de Banco de Dados (DBA) | Front-end</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="experiencia.html">Experiência</a>
+    <a href="formacao.html">Formação</a>
+    <a href="certificacoes.html">Certificações</a>
+  </nav>
+
+  <section id="experiencia">
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li>Consultor de Vendas Imobiliárias – BP Incorporadora / CRED10 (2022 - Atual)</li>
+      <li>Fiscal de Prevenção de Perdas – BIG LAR (2023 - Atual)</li>
+      <li>Vigia Escolar – SEDUCE (2017 - 2018)</li>
+      <li>Fiscal de Loja – Real Service (2014)</li>
+      <li>Controle de Acesso – House Adm. Condominial (2012)</li>
+      <li>Exército Brasileiro – HFA (2005 - 2007)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diêgo Almeida Silva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Rolagem suave para as seções
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
